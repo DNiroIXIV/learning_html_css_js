@@ -1,0 +1,46 @@
+/* The type selector is used to style an element */
+body{
+    /* background-color: burlywood; */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+/* To add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas. */
+h1, h2, p {
+  text-align: center;
+}
+
+/* The id selector is used to target a specific element with an id attribute */
+/* An id selector is defined by placing the hash symbol # directly in front of the element's id value. */
+/* The CSS width property - make the div not take up the entire width of the page */
+/* to center the #menu horizontally - set its margin-left and margin-right properties to auto. Think of the margin as an invisible space around an element. */
+/* #menu{
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* A class selector is defined by a name with a dot directly in front of it */
+.menu{
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* To spread out the content, add a width property */
+.flavor{
+    text-align: left;
+    width: 50%;
+}
+
+.price{
+    text-align: right;
+    width: 50%;
+}
+
+/* To style all the p elements nested anywhere in elements with a class name */
+/* inline-block elements only take up the width of their content. */
+.item p{
+    display: inline-block;
+}
