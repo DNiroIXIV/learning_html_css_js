@@ -1,12 +1,18 @@
 /* The type selector is used to style an element */
-body{
+body {
     /* background-color: burlywood; */
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    /* font-family property value change the font-family of text. */
+    font-family: sans-serif;
+    /* To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property. */
+    padding: 20px;
 }
 
 /* To add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas. */
-h1, h2, p {
-  text-align: center;
+h1,
+h2,
+p {
+    text-align: center;
 }
 
 /* The id selector is used to target a specific element with an id attribute */
@@ -21,26 +27,122 @@ h1, h2, p {
 } */
 
 /* A class selector is defined by a name with a dot directly in front of it */
-.menu{
+.menu {
+    /* Change the width property's value to be 80%, to make it 80% the width of its parent element (body). */
     width: 80%;
     background-color: burlywood;
+    /* to center the #menu horizontally, set its margin-left and margin-right properties to auto. assume the margin as an invisible space around an element */
     margin-left: auto;
     margin-right: auto;
+    /* To give your menu some space between the content and the sides with various padding properties. */
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    /* Since all 4 sides of the menu have the same internal spacing, use a single padding property */
+    padding: 20px;
+    /* Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide. */
+    max-width: 500px;
 }
 
 /* To spread out the content, add a width property */
-.flavor{
+.flavor,
+.dessert {
     text-align: left;
-    width: 50%;
+    width: 75%;
 }
 
-.price{
+.price {
     text-align: right;
-    width: 50%;
+    width: 25%;
 }
 
 /* To style all the p elements nested anywhere in elements with a class name */
 /* inline-block elements only take up the width of their content. */
-.item p{
+.item p {
     display: inline-block;
+    /* To adjust the  gap between each line use css property margin */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* make the font size of the items and prices larger by using a value of 18px */
+    font-size: 18px;
+}
+
+/* add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available. */
+h1,
+h2 {
+    font-family: Impact, serif;
+}
+
+/* Italicize the Est. 2020 by creating an established class selector and giving it a font-style property of italic. */
+.established {
+    font-style: italic;
+}
+
+/* The typography of heading elements (e.g. h1, h2) is set by default values of users' browsers. */
+/* Add two new type selectors (h1 and h2). Use the font-size property for both, but use the value 40px for the h1 and 30px for the h2. */
+h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+/* The h2 elements have default top and bottom margin space */
+/* so you could change the bottom margin of the h2 elements to say 0 or another number. */
+h2 {
+    font-size: 30px;
+    /* margin-bottom: 0px; */
+}
+
+hr {
+    /* Change the height of the hr element to 3px */
+    height: 2px;
+    /* Change the background color of the hr element to brown */
+    background-color: brown;
+    /* Make all the edges of the hr element the same color as the background of it using the border-color property. */
+    border-color: brown;
+    /* The default value of a property named border-width is 1px for all edges of hr elements. */
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+/* change the properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; } */
+a:visited{
+    color: black;
+}
+
+/* change the properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; } */
+a:hover {
+    color: brown;
+}
+
+/* change the properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; } */
+a:active {
+    color: brown;
+}
+
+.address{
+    margin-bottom: 5px;
+}
+
+/* img elements are "like" inline elements */
+/* To make the image behave like block-level elements such as headings, create an img type selector. Set the display property to block, and use margin-left and margin-right properties to center it horizontally. */
+/* add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value. */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: -25px;
 }
