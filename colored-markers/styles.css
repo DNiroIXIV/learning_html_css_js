@@ -1,0 +1,161 @@
+/* in the h1 rule, use the rgb function to set its background-color to cyan. */
+/* And in the h1 CSS rule, remove the background-color property and value to go back to the default white color. */
+h1 {
+    text-align: center;
+    /* background-color: rgb(0, 255, 255); */
+}
+
+/* one way to add color to an element is to use a color keyword like black, cyan, or yellow. */
+/* when a div element has no content in it, it doesn't have any height by default. */
+.marker {
+    /* background-color: red; */
+    height: 25px;
+    width: 200px;
+    /* To center a div use margin shorthand property with value set to auto, 
+    This sets margin-top, margin-right, margin-bottom, and margin-left all to auto */
+    /* To add some space between separate div elements use margin property*/
+    /* When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and 
+    margin-left and margin-right to the second value. */
+    margin: 10px auto;
+}
+
+/* To create the first secondary color, yellow, update the rgb function in the .one CSS rule to combine pure red and pure green. */
+/* To create the tertiary color orange, update the rgb function in the .one CSS rule so that red is at the max value, and set green to 127. */
+/* To create chartreuse green(green + yellow), update the rgb function in the .one CSS rule so that red is at 127, and set green to the max value. */
+/* In the rgb function for the .one CSS rule, set the red value to the max of 255 to produce pure red. */
+/* Next, in the .one CSS rule, use the rgb function to set the background-color to black.  */
+/* Update the .one CSS rule to target the new red class. */
+/* And update the rgb function in the .red CSS rule so that the red value is at the max. */
+/* In the .red CSS rule, change the background-color property to background. */
+/* in the .red CSS rule, set the background property to linear-gradient(), and pass it the value 90deg as the gradientDirection. */
+/* In the linear-gradient function, use the rgb function to set the first color argument to pure red. */
+/* In the same linear-gradient function, use the rgb function to set the second color argument to pure green. */
+/* Use the rgb function to add pure blue as the third color argument to the linear-gradient function. */
+/* In the linear-gradient function, add a 75% color stop after the first red color argument. Do not add color stops to the other colors arguments. */
+/* Next, set the color-stop for red to 0%, the color-stop for green to 50%, and the color-stop for blue to 100%. */
+/* For the first color argument, which is currently pure red, update the rgb function so the value for red is 122, 
+the value for green is 74, and the value for blue is 14. */
+/* Update the rgb function so the value for red is 245, the value of green is 62, and the value of blue is 113. */
+/* Update the rgb function so the value for red is 162, the value of green is 27, and the value of blue is 27. */
+/* In the .red CSS rule, remove the three color stops from the linear-gradient function to clean up your code a bit. */
+/* Clean up your code a little more by removing the gradientDirection argument from both linear-gradient functions. */
+/* In the .red CSS rule, add the box-shadow property with the values 5px for offsetX, 5px for offsetY, and red for color. */
+/* Update the values for the box-shadow property, and set offsetX to -5px, and offsetY to -5px. */
+/* In the .red CSS rule, update the values for the box-shadow property so offsetX is 0,offsetY is 0, 
+blurRadius is 20px, spreadRadius is 0, and color is red. Remember that you don't need to add units to a zero value. */
+/* Replace the named color with the rgba function. Use the values 83 for red, 14 for green, 14 for blue and 0.8 for the alpha channel. */
+.red {
+    /* background-color: rgb(255, 0, 0); */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%); */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); */
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* box-shadow: 5px 5px red; */
+    /* box-shadow: -5px -5px red; */
+    /* box-shadow: 0 0 20px 0 red; */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+/* In the .two CSS rule, set the green value in the rgb function to 127 to lower its intensity. */
+/* set your green marker back to pure green. For the rgb function in the .two CSS rule, set green back to the max value of 255. */
+/* To create the next secondary color, cyan, update the rgb function in the .two CSS rule to combine pure green and pure blue. */
+/* To create the tertiary color spring green, combine cyan with green. 
+Update the rgb function in the .two CSS rule so that green is at the max value, and set blue to 127. */
+/* For azure (blue + cyan), update the rgb function in the .two CSS rule so that green is at 127 and blue is at the max value. */
+/* In the rgb function for .two CSS rule, set the values for green and blue to the max of 255 to produce cyan. */
+/* And in the .two CSS rule, use the rgb function to set the background-color to red. */
+/* use the rgb function in the .two CSS rule to set the background-color to black. */
+/* Update the CSS class selector .two so it targets the new green class. */
+/* In the .green class selector, set the background-color property to a hex color code with the values 00 for red, FF for green, and 00 blue. */
+/* Lower the intensity of green by setting the green value of the hex color to 7F. */
+/* In the .green CSS rule, change the background-color property to background. */
+/* Use the linear-gradient function and set gradientDirection to 180deg. 
+And for the first color argument, use a hex color code with the values 55 for red, 68 for green, and 0D for blue. */
+/* For the second color argument, use a hex color code with the values 71 for red, F5 for green, and 3E for blue. */
+/* In the same linear-gradient function, add a hex color code with the values 11 for red, 6C for green, and 31 for blue as the third color argument. */
+/* In the .green CSS rule, add the box-shadow property with the values 5px for offsetX, 5px for offsetY, 5px for blurRadius, and green for color. */
+/* For the green marker's box-shadow property, replace the named color with a hex color code. Use the values 3B for red, 7E for green, 20 for blue, and CC for the alpha channel. */
+.green {
+    /* background-color: #007F00; */
+    /* background: linear-gradient(180deg, #55680D, #71F53E, #116C31); */
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    /* box-shadow: 5px 5px 5px green; */
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+/* To create the final secondary color, magenta, update the rgb function in the .three CSS rule to combine pure blue and pure red. */
+/* And to create the tertiary color violet, combine magenta with blue. 
+Update the rgb function in the .three CSS rule so that blue is at the max value, and set red to 127. */
+/* And for rose(red + magenta), which is sometimes called bright pink, 
+update the rgb function in the .three CSS rule so that blue is at 127 and red is at the max value. */
+/* And update the .three class selector so it targets the new blue class. */
+/* In the .blue CSS rule, use the hsl function to change the background-color property to pure blue. 
+Set the hue to 240, the saturation to 100%, and the lightness to 50%. */
+/* In the .blue CSS rule, change the background-color property to background. */
+/* Use the linear-gradient function, and pass in the hsl function with the values 186 for hue, 76% for saturation, and 
+16% for lightness as the first color argument. */
+/* As the second color argument, pass in the hsl function with the values 223 for hue, 90% for saturation, and 60% for lightness. */
+/* And as the third color argument, pass in the hsl function with the values 240 for hue, 56% for saturation, and 42% for lightness. */
+/* In the .blue CSS rule, add the box-shadow property with the values 0 for offsetX, 0 for offsetY, 0 for blurRadius, 
+5px for spreadRadius, and blue for color. */
+/* for the blue marker's box-shadow property, replace the named color with the hsla function. 
+Use the values 223 for hue, 59% for saturation, 31% for lightness, and 0.8 for the alpha channel. */
+.blue {
+    /* background-color: hsl(240, 100%, 50%); */
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /* box-shadow: 0 0 0 5px blue; */
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+
+/* Create a new CSS rule that targets the class container and set its background-color to black with rgb(0, 0, 0). */
+/* add a little more vertical space between your markers and the edge of the container element they're in */
+/* In the .container CSS rule, use the shorthand padding property to add 10px of top and bottom padding, and set the left and right padding to 0. 
+This works similarly to the shorthand margin property you used earlier. */
+.container {
+    background-color: rgb(255, 255, 255);
+    /* padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px 0;
+}
+
+/* To make the marker look more realistic, give the sleeve a transparent white color.
+First, set the sleeve element's background-color to white. */
+/* In the .sleeve CSS rule, set the opacity property to 0.5. */
+/* Inside the .sleeve rule, remove the opacity property and value. */
+/* In the .sleeve rule, use the rgba function to set the background-color property to pure white with 50% opacity. */
+/* In the .sleeve CSS rule, add the border-left-width property with the value 10px. */
+/* In the .sleeve CSS rule, replace the border-left-width, 
+border-left-style, and border-left-color properties with the border-left shorthand property. 
+The values for the width, style, and color of the left border should be the same. */
+/* border-left: width style color; */
+/* For the border-left shorthand property, change the border style value from solid to double. */
+.sleeve {
+    width: 110px;
+    height: 25px;
+    /* background-color: white; */
+    /* opacity: 0.5; */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black; */
+    /* border-left: 10px double black; */
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+/* Create a new CSS rule to target the class cap. In the new rule, set the width property to 60px, and the height to 25px. */
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+/* Create a new rule to target both the cap and sleeve classes, and set display to inline-block. */
+
+.sleeve, .cap{
+    display: inline-block;
+}
+
+
+
+
