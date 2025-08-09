@@ -114,7 +114,7 @@ The rgba function works just like the rgb function, but takes one more number fr
 Example Code
 rgba(redValue, greenValue, blueValue, alphaValue); */
 
-<!-- the default display property for div elements is block. So when two block elements are next to each other, they stack like actual blocks. -->
+/* The default display property for div elements is block. So when two block elements are next to each other, they stack like actual blocks. */
 
 /* To position two div elements on the same line, set their display properties to inline-block. */
 
