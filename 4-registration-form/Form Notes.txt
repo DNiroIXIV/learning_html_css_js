@@ -28,3 +28,44 @@ It is time to spruce the project up with some CSS. Begin by giving the body a wi
 Set the method attribute to send your form data via a POST request.
 
 13.As the form will have three distinct sections, add three fieldset elements within the form element.
+
+14.The first fieldset will hold name, email, and password fields. Start by adding four label elements to the first fieldset.
+
+15.Add the following text to the label elements:
+
+Enter Your First Name:
+Enter Your Last Name:
+Enter Your Email:
+Create a New Password:
+
+16.The rem unit stands for root em, and is relative to the font size of the html element.
+
+As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.
+
+17.Nest an input element within each label. Be sure to add each input after the label text, and include a space after the colon.
+
+18.Following accessibility best practices, link the input elements and the label elements together using the for attribute.
+
+Use first-name, last-name, email, and new-password as values for the respective id attributes.
+
+19.Specifying the type attribute of an input element is important for the browser to know what kind of data it should expect. If the type is not specified, the browser will default to text.
+
+Give the first two input elements a type attribute of text, the third a type attribute of email, and the fourth a type attribute of password.
+
+The email type only allows emails with a @ and a . in the domain. The password type obscures the input, and warns if the site does not use HTTPS.
+
+20.The first input element with a type of submit is automatically set to submit its nearest parent form element.
+
+To handle the form submission, after the last fieldset element add an input element with the type attribute set to submit and the value attribute set to Submit.
+
+21.At this point, you should be able to submit the form. However, you might notice not much happens.
+
+To make the form more interactive, add the required attribute to the input elements in the first fieldset.
+
+Now, if you try to submit the form without filling in the required fields, you will see an error message.
+
+22.Certain type attribute values come with built-in form validation. For example, type="email" requires that the value be a valid email address.
+
+Add custom validation to the password input element, by adding a minlength attribute with a value of 8. Doing so prevents inputs of less than 8 characters being submitted.
+
+23.
