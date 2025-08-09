@@ -1,0 +1,30 @@
+1.Start by adding the !DOCTYPE html declaration at the top of the document so the browser knows what type of document it's reading.
+
+2.Below the DOCTYPE, add an html element with a lang attribute set to en, so that you have a place to start putting some code.
+
+3.Next, add opening and closing head and body tags within the html element.
+
+4.Add a title and meta element inside the head element. Give your project a title of Registration Form, and add the charset attribute with a value of utf-8 to your meta element.
+
+5.Nest a link element within the head element. Give it a rel attribute with a value of stylesheet and an href attribute with a value of styles.css.
+
+6.Within the body, provide a heading context for the content, by adding an h1 with the text Registration Form.
+
+7.Below the heading, use the following text within a paragraph element to encourage users to register:
+Example Code
+Please fill out this form with the required information
+
+8.The vh unit stands for viewport height, and is equal to 1% of the height of the viewport. This makes it relative to the viewport height.
+It is time to spruce the project up with some CSS. Begin by giving the body a width of 100%, and a height of 100vh.
+
+9.Now, get rid of the horizontal scroll-bar, by setting the body default margin added by some browsers to 0.
+
+10.Now, make the background easy on the eyes, by changing the body background-color to #1b1b32. Then, to see the text, change the color to #f5f6f7.
+
+11.As suggested by the title, you are creating a form. So, after the p element, insert a form element with an action attribute targeting https://register-demo.freecodecamp.org.
+
+12.The method attribute specifies how to send form-data to the URL specified in the action attribute. The form-data can be sent via a GET request as URL parameters (with method="get") or via a POST request as data in the request body (with method="post").
+
+Set the method attribute to send your form data via a POST request.
+
+13.As the form will have three distinct sections, add three fieldset elements within the form element.
